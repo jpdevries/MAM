@@ -18,7 +18,7 @@
     [
     {
         "title":"Context Settings Concept",
-        "href":"context-settings.php#focus",
+        "href":"context-settings.html#focus",
         "introtext":"Mobile&ndash;first concept for editing Contexts",
         "id":"2",
         "is_container":0,
@@ -27,7 +27,7 @@
     },
     {
         "title":"Dashboard Concept",
-        "href":"index.php#focus",
+        "href":"index.html#focus",
         "introtext":"Just Imagine if your Manager was like this",
         "id":"1",
         "is_container":0,
@@ -37,7 +37,7 @@
     },
     {
         "title":"MAM Manifesto",
-        "href":"manifesto.php#focus",
+        "href":"manifesto.html#focus",
         "introtext":"Read the public declaration for MAM by JP DeVries",
         "id":"3",
         "is_container":0,
@@ -46,7 +46,7 @@
     },
     {
         "title":"README",
-        "href":"readme.php#focus",
+        "href":"readme.html#focus",
         "introtext":"Contribution Guidelines",
         "id":"4",
         "is_container":0,
@@ -55,7 +55,7 @@
     },
     {
         "title":"Resource Edit Concept",
-        "href":"resource-edit.php#focus",
+        "href":"resource-edit.html#focus",
         "introtext":"Concept for editing Resources",
         "id":"5",
         "is_container":0,
@@ -64,7 +64,7 @@
     },
     {
         "title":"Resources",
-        "href":"resources.php#focus",
+        "href":"resources.html#focus",
         "introtext":"Concept for browsing Resources",
         "id":"16",
         "is_container":0,
@@ -73,7 +73,7 @@
     },
     {
         "title":"Settings Page Concept",
-        "href":"settings.php#focus",
+        "href":"settings.html#focus",
         "introtext":"Quickly&ndash;Editable Settings Concept",
         "id":"6",
         "is_container":0,
@@ -82,7 +82,7 @@
     },
     {
         "title":"Spectacular Docs",
-        "href":"spectacular.php#focus",
+        "href":"spectacular.html#focus",
         "introtext":"Some Sass",
         "id":"7",
         "is_container":0,
@@ -91,7 +91,7 @@
     },
     {
         "title":"Users Page Concept",
-        "href":"users.php#focus",
+        "href":"users.html#focus",
         "introtext":"Editing Users could be similar to settings",
         "id":"8",
         "is_container":0,
@@ -100,7 +100,7 @@
     },
     {
         "title":"Posts",
-        "href":"posts/index.php#focus",
+        "href":"posts/index.html#focus",
         "introtext":"We've written some stuff",
         "id":"9",
         "is_container":1,

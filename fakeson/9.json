@@ -23,7 +23,7 @@
     [
     {
         "title":"getResources Tutorial",
-        "href":"posts/getresources-tutorial.php#focus",
+        "href":"posts/getresources-tutorial.html#focus",
         "introtext":"Learn how the hyper&ndash;accessible getResources component is crafted",
         "id":"10",
         "is_container":0,
@@ -32,7 +32,7 @@
     },
     {
         "title":"js-drivers",
-        "href":"posts/js-drivers.php#focus",
+        "href":"posts/js-drivers.html#focus",
         "introtext":"A wild idea to free the Manager from the confinements of any front end framework at all",
         "id":"11",
         "is_container":0,
@@ -41,7 +41,7 @@
     },
     {
         "title":"Adopting Orphans",
-        "href":"posts/orphans.php#focus",
+        "href":"posts/orphans.html#focus",
         "introtext":"A simple use of the &nbsp; entity",
         "id":"12",
         "is_container":0,
@@ -50,7 +50,7 @@
     },
     {
         "title":"Speakable Components",
-        "href":"posts/speakable-titles.php#focus",
+        "href":"posts/speakable-titles.html#focus",
         "introtext":"Learn how to make your pages talk with speakable.jquery.js",
         "id":"13",
         "is_container":0,
@@ -59,7 +59,7 @@
     },
     {
         "title":"Sticky Uberbar",
-        "href":"posts/sticky-uberbar.php#focus",
+        "href":"posts/sticky-uberbar.html#focus",
         "introtext":"Behind the scenes of the Sticky Uberbar component",
         "id":"14",
         "is_container":0,
@@ -68,7 +68,7 @@
     },
     {
         "title":"To&ndash;Do List Tutorial",
-        "href":"posts/accessible-todo.php#focus",
+        "href":"posts/accessible-todo.html#focus",
         "introtext":"Behind the scenes of the To&ndash;Do List component",
         "id":"15",
         "is_container":0,
