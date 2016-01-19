@@ -1,0 +1,81 @@
+{
+    "path":[
+        {
+            "slug":"",
+            "id":"0",
+            "fetch":"fakeson/0.json"
+        },
+        {
+            "slug":"web",
+            "id":"0",
+            "fetch":"fakeson/0.json"
+        },
+        {
+            "slug":"posts",
+            "id":"9",
+            "fetch":"fakeson/9.json"
+        }
+    ],
+    "resource":{
+        "id":"9"
+    },
+    "items":
+    [
+    {
+        "title":"getResources Tutorial",
+        "href":"posts/getresources-tutorial.php#focus",
+        "introtext":"Learn how the hyper&ndash;accessible getResources component is crafted",
+        "id":"10",
+        "is_container":0,
+        "fetch":"fakeson/9.json",
+        "class_key":"modDocument"
+    },
+    {
+        "title":"js-drivers",
+        "href":"posts/js-drivers.php#focus",
+        "introtext":"A wild idea to free the Manager from the confinements of any front end framework at all",
+        "id":"11",
+        "is_container":0,
+        "fetch":"fakeson/9.json",
+        "class_key":"modDocument"
+    },
+    {
+        "title":"Adopting Orphans",
+        "href":"posts/orphans.php#focus",
+        "introtext":"A simple use of the &nbsp; entity",
+        "id":"12",
+        "is_container":0,
+        "fetch":"fakeson/9.json",
+        "class_key":"modDocument"
+    },
+    {
+        "title":"Speakable Components",
+        "href":"posts/speakable-titles.php#focus",
+        "introtext":"Learn how to make your pages talk with speakable.jquery.js",
+        "id":"13",
+        "is_container":0,
+        "fetch":"fakeson/9.json",
+        "class_key":"modDocument"
+    },
+    {
+        "title":"Sticky Uberbar",
+        "href":"posts/sticky-uberbar.php#focus",
+        "introtext":"Behind the scenes of the Sticky Uberbar component",
+        "id":"14",
+        "is_container":0,
+        "fetch":"fakeson/9.json",
+        "class_key":"modDocument"
+    },
+    {
+        "title":"To&ndash;Do List Tutorial",
+        "href":"posts/accessible-todo.php#focus",
+        "introtext":"Behind the scenes of the To&ndash;Do List component",
+        "id":"15",
+        "is_container":0,
+        "fetch":"fakeson/9.json",
+        "class_key":"modDocument"
+    }
+    ]
+}
+
+
