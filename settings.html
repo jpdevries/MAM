@@ -1,4 +1,23 @@
-<?php include 'functions.php';get_header(); ?>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <base href="./">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <META NAME="robots" CONTENT="noindex, nofollow">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="<?php echo 'assets/css/main.min.css?nc=' . time() ?>">
+        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+        
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 <script>
   var MODx = {
       resource:{id:'6'},
@@ -14,7 +33,12 @@
         <!-- Add your site or application content here -->
         <section id="above-fold" style="top:-22.75em"><!-- PHP:set this to ((0-(60+(24*(n+2))+16))/16) in em units where n is $('#resource-view-body > tr').length -->
             <div class="page-wrapper">
-<?php get_settings_nav(); ?>
+                <div class="settings">
+                    <nav class="settings-nav">
+                        <a href="#" title="Configure your MODX Installation"><i class="fa fa-cog"></i></a>
+                        <a href="#" title="Read the Fanstasic Manual"><i class="fa fa-question-circle"></i></a>
+                    </nav>
+                </div>  
                 <div class="resources">
                     <div data-title="Imagine this is a tree-like navigation component for traversing and browsing contexts">
 <div id="resource-view">
@@ -95,7 +119,21 @@
                         </div>
                     </div>
                 </div>
-<?php get_main_nav(); ?>
+                <nav id="main-nav">
+                    <div class="focus" id="focus">
+                        <div class="logo">
+                            <a href="index.php#focus" id="dashboard" title="MODX 2.3.3 Dashboard"><img src="assets/img/modx-logo.svg" width="48" height="48"></a>
+                        </div>
+                        <div class="uber flex-focus">
+                            <div class="primary">
+                                <div>
+                                    <input id="uber-search" type="search" placeholder="Search for anything&hellip;"></input>
+                                </div>
+                            </div>
+                            <div class="secondary"><button><span>Go</span>&nbsp;<i class="fa fa-arrow-right"></i></button></div>
+                        </div>
+                    </div>
+                </nav>    
             </div>
         </section>
         <div class="page-wrapper" style="padding-bottom:6em">
@@ -223,4 +261,37 @@
 
             </div>
         </div>
-<?php get_footer(); ?></body></html>
+        <footer>
+            <div class="page-wrapper">
+                <p>
+                    <small>&mdash;&emsp;&emsp;MODX Manager Concept by @jpdevries<!-- mod<strong>more</strong> -->&emsp;&emsp;&mdash;</small>
+                </p>
+                <p style="opacity:0.678">
+                    <a href="#"><i class="fa fa-slack"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-facebook-square"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-twitter"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-envelope" style="font-size:0.92em"></i></a><br>
+                    <a href="#"><i class="fa fa-html5"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-github-square"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-css3" style="font-size:0.92em"></i></a>
+                </p>
+            </div>
+        </footer>    
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+
+        <script src="http://fb.me/react-0.12.2.js"></script>
+        <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+        
+        <script src="./assets/js/main-min.js"></script>
+        <script type="text/jsx" src="./assets/js/drivers/react/react.js"></script>
+        
+        
+        
+
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X');ga('send','pageview');
+        </script-->
+</body></html>

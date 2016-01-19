@@ -14,7 +14,7 @@
 
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
-        <link rel="stylesheet" href="<?php echo 'assets/css/main.min.css?nc=' . time() ?>">
+        <link rel="stylesheet" href="assets/css/main.min.css">
         <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
         
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
@@ -44,15 +44,25 @@ function get_footer_markup() { ?>
 
 <?php
 function get_footer($baseUrl = '') { ?>
-        <?php get_footer_markup(); ?>
+        <footer>
+            <div class="page-wrapper">
+                <p>
+                    <small>&mdash;&emsp;&emsp;MODX Manager Concept by @jpdevries<!-- mod<strong>more</strong> -->&emsp;&emsp;&mdash;</small>
+                </p>
+                <p style="opacity:0.678">
+                    <a href="#"><i class="fa fa-slack"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-facebook-square"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-twitter"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-envelope" style="font-size:0.92em"></i></a><br>
+                    <a href="#"><i class="fa fa-html5"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-github-square"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-css3" style="font-size:0.92em"></i></a>
+                </p>
+            </div>
+        </footer>    
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="./assets/js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
 
         <script src="http://fb.me/react-0.12.2.js"></script>
         <script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
         
-        <script src="<?php echo './assets/js/main-min.js?nc=' . time() ?>"></script>
-        <script type="text/jsx" src="<?php echo './assets/js/drivers/react/react.js?nc=' . time() ?>"></script>
+        <script src="./assets/js/main-min.js"></script>
+        <script type="text/jsx" src="./assets/js/drivers/react/react.js"></script>
         
         
         

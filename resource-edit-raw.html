@@ -1,10 +1,22 @@
-<?php include 'functions.php';get_header(); ?>
-<script>
-  var MODx = {
-      resource:{id:'5'},
-      tree:{branch:'0'}
-  };
-</script>
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <base href="./">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="<?php echo 'assets/css/main.css?nc=' . time() ?>">
+        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     </head>
     <body class="resource-edit">
         <!--[if lt IE 7]>
@@ -12,19 +24,19 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-        <section id="above-fold" style="top:-22.75em"><!-- PHP:set this to ((0-(60+(24*(n+2))+16))/16) in em units where n is $('#resource-view-body > tr').length -->
-            <div class="page-wrapper">
-<?php get_settings_nav(); ?>
-                <div class="resources">
+        <section id="above-fold">
+            <div class="page-wrapper" style="padding-top:0.2em">
+<?php include 'functions.php';//get_settings_nav(); ?>
+                <!--div class="resources">
                     <div data-title="Imagine this is a tree-like navigation component for traversing and browsing contexts">
-<div id="resource-view">
+                        <div id="resource-view">
                             <div id="resource-view-reactable">
                                 <h4>
                                     <a href="#" title="Switch to another Context"><i class="fa fa-globe"></i></a>&nbsp;
                                     Resources
                                     <div class="codepath">
                                         <a href="#" class="preview" title="Preview this Document"><i className="fa fa-eye"></i></a>
-                                        <pre title="Imagine this is interactive, terminal like with tab-to-complete">/web/</pre>
+                                        <pre title="Imagine this is interactive, terminal like with tab-to-complete">/</pre>
                                     </div>
                                 </h4>
                                 <table border="0" cellspacing="0" cellpadding="0">
@@ -37,54 +49,29 @@
                                     </thead>
                                     <tbody id="resource-view-body">
                                         <tr>
-                                            <td><i class="fa fa-file-text-o" title="Context Settings Concept"></i>&nbsp;<a href="#" title="ID: 2; Published">Context Settings Concept</a></td>
-                                            <td>Mobile&ndash;first concept for editing Contexts</td>
-                                            <td><time>15 days ago</time></td>
+                                            <td><i class="fa fa-folder" title="Contains 2 children"></i>&nbsp;<a href="#" title="ID: 1; Unpublished; Hidden from Menus">Container A</a></td>
+                                            <td>Intro Text A</td>
+                                            <td>Today</td>
                                         </tr>
                                         <tr>
-                                            <td><i class="fa fa-file-text-o" title="Dashboard Concept"></i>&nbsp;<a href="#" title="ID: 1; Published"><strong>Dashboard Concept</strong></a></td>
-                                            <td>Just Imagine if your Manager was like this</td>
-                                            <td><time>Today</time></td>
+                                            <td><i class="fa fa-folder" title="Contains 1 child"></i>&nbsp;<a href="#">Container B</a></td>
+                                            <td>Intro Text B</td>
+                                            <td>Yesterday</td>
                                         </tr>
                                         <tr>
-                                            <td><i class="fa fa-file-text-o" title="MAM Manifesto"></i>&nbsp;<a href="#" title="ID: 3; Published">MAM Manifesto</a></td>
-                                            <td>Read the public declaration for MAM by JP DeVries</td>
-                                            <td><time>Today</time></td>
+                                            <td><i class="fa fa-folder" title="Contains 123 children"></i>&nbsp;<a href="#">Container C</a></td>
+                                            <td>Intro Text C</td>
+                                            <td>15 days ago</td>
                                         </tr>
                                         <tr>
-                                            <td><i class="fa fa-file-text-o" title="README"></i>&nbsp;<a href="#" title="ID: 4; Published">README</a></td>
-                                            <td>Contribution Guidelines</td>
-                                            <td><time>Yesterday</time></td>
+                                            <td><i class="fa fa-link"></i>&nbsp;<a href="#">Weblink D</a></td>
+                                            <td>Intro Text D</td>
+                                            <td>17 days ago</td>
                                         </tr>
                                         <tr>
-                                            <td><i class="fa fa-file-text-o" title="Resource Edit Concept"></i>&nbsp;<a href="#" title="ID: 5; Published"><strong>Resource Edit Concept</strong></a></td>
-                                            <td>Concept for editing Resources</td>
-                                            <td><time>3 Days ago</time></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fa fa-file-text-o" title="Resource Edit Concept"></i>&nbsp;<a href="#" title="ID: 16; Published">Resources</a></td>
-                                            <td>Concept for browsing resources</td>
-                                            <td><time>3 Days ago</time></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fa fa-file-text-o" title="Settings Page Concept"></i>&nbsp;<a href="#" title="ID: 6; Published">Settings Page Concept</a></td>
-                                            <td>Quickly&ndash;Editable Settings Concept</td>
-                                            <td><time>Today</time></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fa fa-file-text-o" title="Spectacular Docs"></i>&nbsp;<a href="#" title="ID: 7; Published">Spectacular Docs</a></td>
-                                            <td>Some Sass</td>
-                                            <td><time>Yesterday</time></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fa fa-file-text-o" title="Users Page Concept"></i>&nbsp;<a href="#" title="ID: 8; Published">Users Page Concept</a></td>
-                                            <td>Editing Users could be similar to settings</td>
-                                            <td><time>4 Days ago</time></td>
-                                        </tr>
-                                        <tr>
-                                            <td><i class="fa fa-folder" title="Posts"></i>&nbsp;<a href="#" title="ID: 9; Published">Posts</a></td>
-                                            <td>We've written some stuff</td>
-                                            <td><time>Yesterday</time></td>
+                                            <td><i class="fa fa-file-text"></i>&nbsp;<a href="#">Resource E</a></td>
+                                            <td>Intro Text E</td>
+                                            <td>19 days ago</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -94,8 +81,22 @@
                             </nav>
                         </div>
                     </div>
-                </div>
-<?php get_main_nav(); ?>
+                </div-->
+                <nav id="main-nav">
+                    <div class="focus" id="focus">
+                        <div class="logo">
+                            <a href="index.php#focus" id="dashboard" title="MODX 2.3.3 Dashboard"><img src="assets/img/modx-logo.svg" width="48" height="48"></a>
+                        </div>
+                        <div class="uber flex-focus">
+                            <div class="primary">
+                                <div>
+                                    <input id="uber-search" type="search" placeholder="Search for anything&hellip;"></input>
+                                </div>
+                            </div>
+                            <div class="secondary"><button><span>Go</span>&nbsp;<i class="fa fa-arrow-right"></i></button></div>
+                        </div>
+                    </div>
+                </nav>    
             </div>
         </section>
         <div class="page-wrapper" style="padding-bottom:6em">
@@ -167,7 +168,7 @@
                                 <textarea id="resource-content" rows="6" placeholder="Main content area. Could obviously be spruced up with premium extras :)"></textarea>
                             </fieldset>
                     </section>
-                </div> 
+                </div>
                 <div class="shell shell-tags">
                     <section class="box">
                         <header>
@@ -247,7 +248,7 @@
                                     <label for="package_version">Package Version</label>
                                     <input type="text" name="package_version" value="" id="package_version" placeholder="1.0.0">
                                 </div>
-                                
+
                                 <div style="margin-top:1em">
                                     <label>Release Channel</label>
                                     <select>
@@ -349,7 +350,7 @@
                                             <input type="checkbox" checked>&nbsp;Cacheable<br>
                                             <input type="checkbox" checked>&nbsp;Empty Cache<br>
                                         </div>
-                                    </fieldset> 
+                                    </fieldset>
                                     <fieldset>
                                         <input type="checkbox">&nbsp;Freeze URI<br><br>
                                         <div style="display:none">
@@ -472,7 +473,7 @@
                             </tbody>
                         </table-->
                         <br>
-                        <nav class="grid-nav">
+                        <nav class="grid-nav" style="margin-bottom:1.5em">
                             <button href="#" class="clicky" title="Add a new Resource under the root Web Context"><i class="<a href="resource-edit.php" title="Add a new Resource under the root Web Context"><i class="fa fa-plus-square"></i></a>"></i>&nbsp;Add a New Resource Group</button>
                         </nav>
                     </section>
@@ -601,7 +602,7 @@
                 </div>
                 <div class="shell shell-greedy shell-save">
                     <div class="box">
-                        <button id="save-doc" disabled type="submit" class="very-clicky" style="margin-top:0.5em">Save your Changes</button>           
+                        <button id="save-doc" disabled type="submit" class="very-clicky" style="margin-top:0.5em">Save your Changes</button>
                         <a href="#"><button id="delete" class="big-button very-clicky">Delete</button></a>
                         <aside class="untouchable">
                             <p>
@@ -684,6 +685,17 @@
                     </section>
                 </div>
             </div>
-            
+
         </div>
-<?php get_footer(); ?></body></html>
+function get_footer_markup() { ?>
+        <footer>
+            <div class="page-wrapper">
+                <p>
+                    <small>&mdash;&emsp;&emsp;MODX Manager Concept by @jpdevries<!-- mod<strong>more</strong> -->&emsp;&emsp;&mdash;</small>
+                </p>
+                <p style="opacity:0.678">
+                    <a href="#"><i class="fa fa-slack"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-facebook-square"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-twitter"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-envelope" style="font-size:0.92em"></i></a><br>
+                    <a href="#"><i class="fa fa-html5"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-github-square"></i></a>&emsp;&emsp;<a href="#"><i class="fa fa-css3" style="font-size:0.92em"></i></a>
+                </p>
+            </div>
+        </footer>    </body></html>
