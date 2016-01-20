@@ -1,4 +1,6 @@
 # MAM
+
+[![Join the chat at https://gitter.im/jpdevries/MAM](https://badges.gitter.im/jpdevries/MAM.svg)](https://gitter.im/jpdevries/MAM?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 WIP. Say yes to a More Accessible Manager.
 
 Concepts from [devries.jp/static/mam](http://devries.jp/static/mam)
